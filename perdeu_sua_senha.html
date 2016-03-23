@@ -59,7 +59,7 @@
             </div>
           </div>
 
-            <form method="post" action="esqueci_minha_senha.html onsubmit="javascript:window.open('esqueci_minha_senha.html');" id="contact">
+            <form method="post" action="esqueci_minha_senha.html" id="contact" name="esqueci_minha_senha">
               <div class="panel-body bg-light">
                 <div class="option-group field section">
                   <label for="checked" class="option block mt15">
@@ -77,7 +77,7 @@
               <!-- end .form-body section -->
               <div class="panel-footer text-right">
                 <button type="reset" class="button btn-default"> Cancela </button>
-                <button type="submit" class="button btn-primary-circuito"> Avançar </button>
+                <input type="submit" class="button btn-primary-circuito" value=" Avançar " onclick="document.esqueci_minha_senha.submit();">
               </div>
             </form>
 

@@ -16,8 +16,8 @@
   <!-- Theme CSS -->
   <link rel="stylesheet" type="text/css" href="assets/skin/default_skin/css/theme.css">
 
-  <!-- CSS Personalizado da Solução Circuito da Visão -->
-  <link rel="stylesheet" type="text/css" href="assets/skin/default_skin/css/curcuito-estilos-texto.css">
+  <!-- CSS Personalizado da Solução Circuito da Visão para Páginas de Login -->
+  <link rel="stylesheet" type="text/css" href="assets/skin/default_skin/css/cv-login/estilos-login.css">
 
   <!-- Admin Forms CSS -->
   <link rel="stylesheet" type="text/css" href="assets/admin-tools/admin-forms/css/admin-forms.css">
@@ -59,7 +59,7 @@
             </div>
           </div>
 
-            <form method="post" action="/" id="contact">
+            <form method="post" action="link_de_recuperacao_enviado.html" id="contact" name="link_recuperacao_enviado">
               <div class="panel-body bg-light">
                 <div class="section mn">
                   <div class="smart-widget">
@@ -76,8 +76,8 @@
                 <!-- end section -->
               </div>
               <div class="panel-footer text-right">
-                <button type="reset" class="button btn-default"> Voltar </button>
-                <button type="submit" class="button btn-primary-circuito"> Avançar </button>
+                <button type="reset" class="button btn-default" onclick="javascript:window.history.go(-1)"> Voltar </button>
+                <button type="submit" class="button btn-primary-circuito" onclick="document.link_recuperacao_enviado.submit();"> Avançar </button>
               </div>
 
             </form>

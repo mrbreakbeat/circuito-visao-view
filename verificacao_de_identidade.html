@@ -23,7 +23,7 @@
   <link rel="stylesheet" type="text/css" href="assets/admin-tools/admin-forms/css/admin-forms.css">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -64,9 +64,9 @@
               <div class="option-group field section">
                 <p>Para onde devemos enviar sua redefinição de senha?</p>
                 <label for="checked" class="option block mt15">
-                <input type="radio" name="gender" id="checked" value="checked" checked>
+                <input type="radio" name="gender" id="checked" value="checked" class="mostrar-dica">
                 <span class="radio"></span>Email para xx*****@email.com</label>
-                <div class="ocultar-textos">
+                <div class="campo-dica">
                   <br>
                   <p class="text-center">Para verificar se esse é o seu endereço de email, preencha a parte oculta e clique em "Enviar código" para receber o seu link de recuperação.</p>
                   <br>
@@ -78,7 +78,7 @@
                   </label>
                 </div>
                 <label for="checked-2" class="option block mt15">
-                <input type="radio" name="gender" id="checked-2" value="checked-2">
+                <input type="radio" name="gender" id="checked-2" value="checked-2" class="nao-mostrar-dica">
                 <span class="radio"></span>Não sei o meu usuário</label>
               </div>
             </div>
@@ -110,6 +110,9 @@
   <script src="assets/js/utility/utility.js"></script>
   <script src="assets/js/demo/demo.js"></script>
   <script src="assets/js/main.js"></script>
+
+  <!-- Scripts Circuito da Visão -->
+  <script src="assets/js/circuito_da_visao/circuito-mascaras_e_validacoes.js"></script>
 
   <!-- Page Javascript -->
   <script type="text/javascript">
