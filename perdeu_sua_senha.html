@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <title>Perdeu sua senha? - Circuito da Visão 5.0</title>
+  <meta name="keywords" content="Circuito da Visão, Sara Nossa Terra, HTML5" />
+  <meta name="description" content="Entrar - Circuito da Visão 5.0">
+  <meta name="author" content="Circuito da Visão 5.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font CSS (Via CDN) -->
+  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/skin/default_skin/css/theme.css">
+
+  <!-- CSS Personalizado da Solução Circuito da Visão para Páginas de Login -->
+  <link rel="stylesheet" type="text/css" href="assets/skin/default_skin/css/cv-login/estilos-login.css">
+
+  <!-- Admin Forms CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/admin-tools/admin-forms/css/admin-forms.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+   <![endif]-->
+</head>
+
+<body class="external-page external-alt sb-l-c sb-r-c">
+
+  <!-- Start: Main -->
+  <div id="main" class="animated fadeIn">
+
+    <!-- Start: Content-Wrapper -->
+    <section id="content_wrapper">
+
+      <!-- begin canvas animation bg -->
+      <div id="canvas-wrapper">
+        <canvas id="demo-canvas"></canvas>
+      </div>
+
+      <!-- Begin: Content -->
+      <section id="content" class="animated fadeIn">
+        <div class="admin-form theme-info mw500" style="margin-top: 10%;" id="login">
+          <div class="row mb15 table-layout">
+
+            <div class="col-xs-12 pln">
+              <a href="dashboard.html" title="Return to Dashboard">
+                <img src="assets/img/logos/logo_circuito-pequeno.png" title="Circuito da Visão" class="center-block img-responsive" style="max-width: 275px;">
+              </a>
+              <br>
+              <h2 class="titulo-perdeu-sua-senha">Por que você não consegue entrar no Circuito?</h2>
+            </div>
+          </div>
+
+            <form method="post" action="esqueci_minha_senha.html" id="contact">
+              <div class="panel-body bg-light">
+                <div class="option-group field section">
+                  <label for="checked" class="option block mt15">
+                  <input type="radio" name="nao-consigo-entrar" id="checked" value="checked" class="nao-mostrar-dica">
+                  <span class="radio"></span>Por que esqueci minha senha</label>
+                  <label for="checked-2" class="option block mt15">
+                  <input type="radio" name="nao-consigo-entrar" id="checked-2" value="checked-2" class="mostrar-dica">
+                  <span class="radio"></span>Eu sei a minha senha, mas não consigo entrar!</label>
+                  <div class="campo-dica">
+                    <br>
+                    <span><b>Dica:</b> Verifique a conta na qual você está tentando entrar. Às vezes as pessoas digitam errado o endereço de email. Verifique também se está usando o domínio correto para a sua conta, como hotmail.com, live.com ou outlook.com.</span>
+                  </div>
+                </div>
+              </div>
+              <!-- end .form-body section -->
+              <div class="panel-footer text-right">
+                <button type="reset" class="button btn-default"> Cancela </button>
+                <button type="submit" class="button btn-primary-circuito"> Avançar </button>
+              </div>
+            </form>
+
+        </div>
+
+      </section>
+      <!-- End: Content -->
+
+    </section>
+    <!-- End: Content-Wrapper -->
+
+  </div>
+  <!-- End: Main -->
+
+  <!-- BEGIN: PAGE SCRIPTS -->
+
+  <!-- jQuery -->
+  <script src="vendor/jquery/jquery-1.11.1.min.js"></script>
+  <script src="vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+
+  <!-- Theme Javascript -->
+  <script src="assets/js/utility/utility.js"></script>
+  <script src="assets/js/demo/demo.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Scripts Circuito da Visão -->
+  <script src="assets/js/circuito_da_visao/circuito-mascaras_e_validacoes.js"></script>
+
+  <!-- Page Javascript -->
+  <script type="text/javascript">
+  jQuery(document).ready(function() {
+
+    "use strict";
+
+    // Init Theme Core
+    Core.init();
+
+    // Init Demo JS
+    Demo.init();
+
+
+  });
+
+  </script>
+
+  <!-- END: PAGE SCRIPTS -->
+
+</body>
+
+</html>
