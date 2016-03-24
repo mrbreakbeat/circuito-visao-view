@@ -4,9 +4,9 @@
 <head>
   <!-- Meta, title, CSS, favicons, etc. -->
   <meta charset="utf-8">
-  <title>Redefinir Senha - Circuito da Visão</title>
+  <title>Seu Login - Circuito da Visão</title>
   <meta name="keywords" content="HTML5 Bootstrap 3 Admin Template UI Theme" />
-  <meta name="description" content="Circuito da Visão - Redefinir Senha">
+  <meta name="description" content="Circuito da Visão - Seu Login">
   <meta name="author" content="Circuito da Visão">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -32,7 +32,7 @@
    <![endif]-->
 </head>
 
-<body class="external-page external-alt sb-l-c sb-r-c onload-check form-plugins-page">
+<body class="external-page external-alt sb-l-c sb-r-c">
 
   <!-- Start: Main -->
   <div id="main" class="animated fadeIn">
@@ -55,42 +55,23 @@
                 <img src="assets/img/logos/logo_circuito-pequeno.png" title="Circuito da Visão" class="center-block img-responsive" style="max-width: 275px;">
               </a>
               <br>
-              <h2 class="titulo-perdeu-sua-senha">Redefina sua senha</h2>
+              <div class="col-xs-12 text-center">
+                <span class="imoon imoon-checkbox-checked text-circuito-visao big-icone"></span>
+              </div>
+
+              <div class="alert alert-default alert-dismissable mb30 text-center">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <h3 class="mt5">usuario@email.com</h3>
+                <p>senha redefinida às <small class="text-primary">13:44 24/03/2016</small></p>
+              </div>
+
             </div>
+
           </div>
-
-            <form method="post" action="/" id="contact" role="form" class="form-horizontal">
-              <div class="panel-body bg-light form-group">
-                <div class="section mn">
-                  <div class="smart-widget">
-                    <p class="text-center">Digite uma nova senha paara sua conta no <b class="text-default">CircuitoDaVisão.com.br</b>.</p>
-                    <div class="input-group">
-                      <span class="input-group-addon">Nova senha</span>
-                      <input class="form-control" type="text" placeholder="Digite sua nova senha">
-                    </div>
-                  </div>
-                  <!-- end .smart-widget section -->
-
-                  <br>
-
-                  <div class="smart-widget">
-                    <div class="input-group">
-                      <span class="input-group-addon">Repita sua senha</span>
-                      <input class="form-control" type="text" placeholder="Digite novamente sua senha">
-                    </div>
-                  </div>
-                  <!-- end .smart-widget section -->
-                </div>
-                <!-- end section -->
-              </div>
-              <div class="panel-footer clearfix">
-                <button type="submit" class="button btn-primary-circuito mr10 pull-right"> Redefinir Senha </button>
-                <label class="switch ib switch-primary-circuito mt10">
-                  <strong class="active pl15"><a href="index.html" target="_parent" class="texto-preto-cv" class="texto-mobile">Entrar no CircuitoDaVisao.com.br</a></strong>
-                </label>
-              </div>
-
-            </form>
+          <blockquote class="blockquote-thin mv20">
+            <p>Acesse o <strong class="texto-preto-cv"><a href="index.html">CircuitoDaVisão.com</a></strong></p>
+            <small>A mensagem em seu email tem duração de 24 Horas</small>
+          </blockquote>
 
         </div>
 
@@ -99,7 +80,6 @@
 
     </section>
     <!-- End: Content-Wrapper -->
-
 
   </div>
   <!-- End: Main -->
@@ -115,9 +95,6 @@
   <script src="assets/js/demo/demo.js"></script>
   <script src="assets/js/main.js"></script>
 
-  <!-- MaskedInput Plugin -->
-  <script src="vendor/plugins/jquerymask/jquery.maskedinput.min.js"></script>
-
   <!-- Page Javascript -->
   <script type="text/javascript">
   jQuery(document).ready(function() {
@@ -130,21 +107,6 @@
     // Init Demo JS
     Demo.init();
 
-
-    // Init jQuery Masked inputs
-    $('.date').mask('99/99/9999');
-    $('.time').mask('99:99:99');
-    $('.date_time').mask('99/99/9999 99:99:99');
-    $('.zip').mask('99999-999');
-    $('.phone').mask('(999) 999-9999');
-    $('.phoneext').mask("(999) 999-9999 x99999");
-    $(".money").mask("999,999,999.999");
-    $(".product").mask("999.999.999.999");
-    $(".tin").mask("99-9999999");
-    $(".ssn").mask("999-99-9999");
-    $(".ip").mask("9ZZ.9ZZ.9ZZ.9ZZ");
-    $(".eyescript").mask("~9.99 ~9.99 999");
-    $(".custom").mask("9.99.999.9999");
 
   });
   </script>
