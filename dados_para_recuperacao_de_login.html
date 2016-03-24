@@ -23,7 +23,7 @@
   <link rel="stylesheet" type="text/css" href="assets/admin-tools/admin-forms/css/admin-forms.css">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -32,7 +32,7 @@
    <![endif]-->
 </head>
 
-<body class="external-page external-alt sb-l-c sb-r-c">
+<body class="external-page external-alt sb-l-c sb-r-c onload-check form-plugins-page">
 
   <!-- Start: Main -->
   <div id="main" class="animated fadeIn">
@@ -59,29 +59,27 @@
             </div>
           </div>
 
-            <form method="post" action="/" id="contact">
-              <div class="panel-body bg-light">
+            <form method="post" action="/" id="contact" role="form" class="form-horizontal">
+              <div class="panel-body bg-light form-group">
                 <div class="section mn">
                   <div class="smart-widget">
                     <p class="text-center">Nos diga quais são os <b class="text-danger">2 últimos dígitos do seu CPF</b> XXX.XXX.XXX-<b class="text-danger">XX</b>.</p>
-                    <label for="email" class="field prepend-icon">
-                      <input type="text" name="email" id="email" class="gui-input " placeholder="Coloque aqui os dígitos do seu CPF">
-                      <label for="email" class="field-icon">
-                        <i class="fa fa-lock"></i>
-                      </label>
-                    </label>
+                    <div class="input-group">
+                      <span class="input-group-addon">XXX.XXX.XXX-</span>
+                      <input class="form-control" type="text" placeholder="XX">
+                    </div>
                   </div>
                   <!-- end .smart-widget section -->
 
                   <br>
 
                   <div class="smart-widget">
-                    <label for="email" class="field prepend-icon">
-                      <input type="text" name="email" id="email" class="gui-input " placeholder="Sua data de nascimento">
-                      <label for="email" class="field-icon">
+                    <div class="input-group">
+                      <span class="input-group-addon">
                         <i class="fa fa-calendar"></i>
-                      </label>
-                    </label>
+                      </span>
+                      <input type="text" id="maskedDate" class="form-control date" maxlength="10" autocomplete="off" placeholder="11/11/1111">
+                    </div>
                   </div>
                   <!-- end .smart-widget section -->
                 </div>
@@ -102,6 +100,7 @@
     </section>
     <!-- End: Content-Wrapper -->
 
+
   </div>
   <!-- End: Main -->
 
@@ -116,6 +115,9 @@
   <script src="assets/js/demo/demo.js"></script>
   <script src="assets/js/main.js"></script>
 
+  <!-- MaskedInput Plugin -->
+  <script src="vendor/plugins/jquerymask/jquery.maskedinput.min.js"></script>
+
   <!-- Page Javascript -->
   <script type="text/javascript">
   jQuery(document).ready(function() {
@@ -128,6 +130,21 @@
     // Init Demo JS
     Demo.init();
 
+
+    // Init jQuery Masked inputs
+    $('.date').mask('99/99/9999');
+    $('.time').mask('99:99:99');
+    $('.date_time').mask('99/99/9999 99:99:99');
+    $('.zip').mask('99999-999');
+    $('.phone').mask('(999) 999-9999');
+    $('.phoneext').mask("(999) 999-9999 x99999");
+    $(".money").mask("999,999,999.999");
+    $(".product").mask("999.999.999.999");
+    $(".tin").mask("99-9999999");
+    $(".ssn").mask("999-99-9999");
+    $(".ip").mask("9ZZ.9ZZ.9ZZ.9ZZ");
+    $(".eyescript").mask("~9.99 ~9.99 999");
+    $(".custom").mask("9.99.999.9999");
 
   });
   </script>

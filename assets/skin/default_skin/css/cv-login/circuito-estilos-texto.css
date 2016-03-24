@@ -1,8 +1,8 @@
 /*Estilos destinados a formatação da frase principal da página 'Perdeu sua senha'*/
 .titulo-perdeu-sua-senha {
-  font-size: 1.9em;
+  font-size: 1.6em;
   font-weight: 100;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   text-align: center;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .text-circuito-visao {
-  color: #000000;
+  color: #000;
 }
 
 .box-separacao {
@@ -21,4 +21,8 @@
 .campo-dica span {
   line-height: 175%;
   text-align: justify;
+}
+
+.texto-mobile {
+  font-size: 1em;
 }
