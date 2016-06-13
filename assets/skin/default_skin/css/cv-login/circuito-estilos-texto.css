@@ -15,7 +15,7 @@
 }
 
 .box-separacao {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .campo-dica span {
@@ -25,4 +25,9 @@
 
 .texto-mobile {
   font-size: 1em;
+}
+
+.fs35-responsiva{
+  font-size: 1.8em;
+  -webkit-font-size: 1.6em;
 }

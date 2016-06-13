@@ -13,6 +13,9 @@
   <!-- Font CSS (Via CDN) -->
   <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
 
+  <!-- Ladda Loading Btns CSS -->
+  <link rel="stylesheet" type="text/css" href="vendor/plugins/ladda/ladda.min.css">
+
   <!-- Theme CSS -->
   <link rel="stylesheet" type="text/css" href="assets/skin/default_skin/css/theme.css">
 
@@ -122,6 +125,9 @@
   <script src="vendor/jquery/jquery-1.11.1.min.js"></script>
   <script src="vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
 
+  <!-- Ladda Loading Button JS -->
+  <script src="vendor/plugins/ladda/ladda.min.js"></script>
+
   <!-- Theme Javascript -->
   <script src="assets/js/utility/utility.js"></script>
   <script src="assets/js/demo/demo.js"></script>
@@ -138,6 +144,27 @@
 
     // Init Demo JS
     Demo.init();
+
+    // Init Ladda Plugin on buttons
+    Ladda.bind('.ladda-button', {
+      timeout: 2000
+    });
+
+    // Bind progress buttons and simulate loading progress. Note: Button still requires ".ladda-button" class.
+    Ladda.bind('.progress-button', {
+      callback: function(instance) {
+        var progress = 0;
+        var interval = setInterval(function() {
+          progress = Math.min(progress + Math.random() * 0.1, 1);
+          instance.setProgress(progress);
+
+          if (progress === 1) {
+            instance.stop();
+            clearInterval(interval);
+          }
+        }, 200);
+      }
+    });
 
   });
   </script>

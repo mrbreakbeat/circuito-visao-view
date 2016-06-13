@@ -17337,6 +17337,7 @@ body {
   left: 0px;
   margin-left: 250px;
 }
+
 /* Transitions */
 body.onload-check .navbar,
 body.onload-check .navbar-branding,
@@ -20983,6 +20984,11 @@ body.external-page .coming-soon-title {
 // ================================================= */
 body.external-page.external-alt #main {
   background: #f4f4f4;
+}
+/**/
+body.external-page.external-alt #main-photo {
+  background-image: url("../../../img/stock/possivel_anuncio.jpg");
+  width: 100%;
 }
 body.external-page.external-alt #content .admin-form {
   margin-top: 5%;
