@@ -4,16 +4,16 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
 ;( function( window ) {
-	
+
 	'use strict';
 
 	function extend( a, b ) {
-		for( var key in b ) { 
+		for( var key in b ) {
 			if( b.hasOwnProperty( key ) ) {
 				a[key] = b[key];
 			}
@@ -37,7 +37,7 @@
 		var s = Snap( this.el.querySelector( 'svg' ) );
 		this.path = s.select( 'path' );
 		this.initialPath = this.path.attr('d');
-		
+
 		var openingStepsStr = this.el.getAttribute( 'data-opening' );
 		this.openingSteps = openingStepsStr ? openingStepsStr.split(';') : '';
 		this.openingStepsTotal = openingStepsStr ? this.openingSteps.length : 0;
@@ -47,7 +47,7 @@
 		var closingStepsStr = this.el.getAttribute( 'data-closing' ) ? this.el.getAttribute( 'data-closing' ) : this.initialPath;
 		this.closingSteps = closingStepsStr ? closingStepsStr.split(';') : '';
 		this.closingStepsTotal = closingStepsStr ? this.closingSteps.length : 0;
-		
+
 		this.isAnimating = false;
 
 		if( !this.options.speedOut ) {
@@ -64,20 +64,31 @@
 		// animate svg
 		var self = this,
 			onEndAnimation = function() {
+
 				classie.addClass( self.el, 'pageload-loading' );
+				//ADICIONA O NEW LOADER NO HTML
+				$(".loadimg").addClass("pageload-loading");
+				$(".preloader-preview-area").addClass("pageload-loading");
+
 			};
 		this._animateSVG( 'in', onEndAnimation );
 		classie.add( this.el, 'show' );
+
 	}
 
 	SVGLoader.prototype.hide = function() {
 		var self = this;
+
 		classie.removeClass( this.el, 'pageload-loading' );
-		this._animateSVG( 'out', function() { 
+		//REMOVE O NEW LOADER DO HTML
+		$(".loadimg").removeClass("pageload-loading");
+		$(".preloader-preview-area").removeClass("pageload-loading");
+
+		this._animateSVG( 'out', function() {
 			// reset path
 			self.path.attr( 'd', self.initialPath );
 			classie.removeClass( self.el, 'show' );
-			self.isAnimating = false; 
+			self.isAnimating = false;
 		} );
 	}
 
