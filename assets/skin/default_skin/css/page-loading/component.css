@@ -32,9 +32,8 @@
 /* -- NEW LOADER ANIMATION -- */
 
 /* AJUSTE DA IMAGEM */
-.loadimg{
+.loading{
 	width: 100%;
-	height: 62px;
 	position: fixed;
 	visibility: hidden;
 	z-index: 1000;
@@ -55,7 +54,7 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     width: 5px;
-    height: 50px;
+    height: 35px;
     border-radius: 2px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -111,7 +110,7 @@
 }
 
 /* TRABALHA COM O JS PARA DEIXAR O LOADER E A IMAGEM VISIVEL */
-.pageload-loading.loadimg,
+.pageload-loading.loading,
 .pageload-loading.preloader-preview-area {
 	opacity: 1;
 	visibility: visible;

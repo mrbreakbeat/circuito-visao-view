@@ -67,7 +67,7 @@
 
 				classie.addClass( self.el, 'pageload-loading' );
 				//ADICIONA O NEW LOADER NO HTML
-				$(".loadimg").addClass("pageload-loading");
+				$(".loading").addClass("pageload-loading");
 				$(".preloader-preview-area").addClass("pageload-loading");
 
 			};
@@ -81,7 +81,7 @@
 
 		classie.removeClass( this.el, 'pageload-loading' );
 		//REMOVE O NEW LOADER DO HTML
-		$(".loadimg").removeClass("pageload-loading");
+		$(".loading").removeClass("pageload-loading");
 		$(".preloader-preview-area").removeClass("pageload-loading");
 
 		this._animateSVG( 'out', function() {
