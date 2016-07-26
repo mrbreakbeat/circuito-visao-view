@@ -321,46 +321,6 @@
                             </div>
                             <!-- end .section row section -->
 
-                            <div class="section-divider mv40 disabled-section">
-                                <span>Sexo do Novo Membro</span>
-                            </div>
-                            <!-- .section-divider -->
-
-                            <div class="section text-center disabled-section-solteiro">
-                                <div class="option-group field">
-                                    <label for="masculino" class="option">
-                                        <input type="radio" name="reach" id="tv" value="masculino">
-                                        <span class="radio"></span>Masculino</label>
-                                    <label for="feminino" class="option">
-                                        <input type="radio" name="reach" id="int" value="feminino">
-                                        <span class="radio"></span>Feminino</label>
-                                </div>
-                            </div>
-                            <!-- end .section section -->
-
-                        </div>
-                        <!-- end .form-body section -->
-                        <div class="panel-footer text-right">
-                            <button type="submit" class="btn btn-danger">Avançar</button>
-                        </div>
-                        <!-- end .form-footer section -->
-                    </form>
-                </div>
-                <!-- end .admin-form section -->
-            </div>
-            <!-- end: .admin-form -->
-        </div>
-
-        <div class="row">
-            <!-- Cadastro de Responsável -->
-            <div class="admin-form theme-success tab-pane mw800 pl20 pr20" id="survey1" role="tabpanel">
-                <blockquote class="blockquote-success">
-                    <p>Cadastro Responsável</p>
-                    <small>Registro Convencional</small>
-                </blockquote>
-                <div class="panel panel-success heading-border">
-                    <form method="post" action="/" id="form-survey1">
-                        <div class="panel-body p25">
                             <div class="section-divider mv40">
                                 <span>Dados Pessoais</span>
                             </div>
@@ -524,39 +484,40 @@
 
                             </div>
                             <!-- end .section row section -->
+                            <div id="hidealuno">
+                              <div class="section-divider mv40">
+                                  <span>Selecione um aluno para cadastro</span>
+                              </div>
+                              <!-- .section-divider -->
 
-                            <div class="section-divider mv40">
-                                <span>Selecione um aluno para cadastro</span>
+                              <div class="col-md-12">
+                                  <div class="section row text-center">
+                                      <button type="button" class="btn disabled btn-default btn-block">Não existem alunos registrados.</button>
+                                  </div>
+                                  <div class="section row">
+                                      <label for="city" class="field-label">Aluno do IV</label>
+                                      <label for="city" class="field">
+                                          <label class="field select">
+                                              <select id="country" name="country">
+                                                  <option value="0">Selecione</option>
+                                                  <option value="1">Sérgio Bezerra da Silva</option>
+                                                  <option value="2">Francisco da Silva</option>
+                                                  <option value="3">Rômulo Sem Rumo</option>
+                                                  <option value="4">Vivian Xavier</option>
+                                              </select>
+                                              <i class="arrow"></i>
+                                          </label>
+                                      </label>
+                                  </div>
+                                  <!-- end section -->
+                              </div>
                             </div>
-                            <!-- .section-divider -->
-
-                            <div class="col-md-12">
-                                <div class="section row text-center">
-                                    <button type="button" class="btn disabled btn-default btn-block">Não existem alunos registrados.</button>
-                                </div>
-                                <div class="section row">
-                                    <label for="city" class="field-label">Aluno do IV</label>
-                                    <label for="city" class="field">
-                                        <label class="field select">
-                                            <select id="country" name="country">
-                                                <option value="0">Selecione</option>
-                                                <option value="1">Sérgio Bezerra da Silva</option>
-                                                <option value="2">Francisco da Silva</option>
-                                                <option value="3">Rômulo Sem Rumo</option>
-                                                <option value="4">Vivian Xavier</option>
-                                            </select>
-                                            <i class="arrow"></i>
-                                        </label>
-                                    </label>
-                                </div>
-                                <!-- end section -->
-                            </div>
+                            <!-- end .section section -->
 
                         </div>
                         <!-- end .form-body section -->
                         <div class="panel-footer text-right">
-                            <button type="button" name="cancelar" id="cancelar" class="btn ladda-button btn-default dark" data-style="zoom-in" value="Back" onclick="location.href = '/'"><span class="ladda-label">Cancelar</span><span class="ladda-spinner"></span></button>
-                            <button type="submit" class="btn btn-success">Cadastrar</button>
+                            <button type="submit" class="btn btn-danger">Avançar</button>
                         </div>
                         <!-- end .form-footer section -->
                     </form>
@@ -1257,6 +1218,7 @@
   <!-- jQuery -->
   <script src="vendor/jquery/jquery-1.11.1.min.js"></script>
   <script src="vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="hide.js"></script>
 
   <!-- Theme Javascript -->
   <script src="assets/js/utility/utility.js"></script>
