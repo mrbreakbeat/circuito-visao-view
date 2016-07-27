@@ -4,6 +4,7 @@ $(document).ready(function(){
 
   $("#hidealuno").hide();
   $("#hidedados").hide();
+  $("#hidecheckbox").hide();
 
   $("#int").click(function(){
 
@@ -16,6 +17,22 @@ $(document).ready(function(){
 
     $("#hidealuno").hide();
     $("#hidedados").show();
+  });
+
+  $("#tipo").change(function(){
+    
+    var opSelected = $("#tipo option:selected").val();
+
+    if(opSelected == 2){
+
+        $("#hidecheckbox").show();
+
+    }else{
+
+        $("#hidecheckbox").hide();
+
+    }
+
   });
 
 });
