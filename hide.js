@@ -3,17 +3,19 @@
 $(document).ready(function(){
 
   $("#hidealuno").hide();
+  $("#hidedados").hide();
 
   $("#int").click(function(){
 
     $("#hidealuno").show();
+    $("#hidedados").hide();
 
   });
-  
+
   $("#tv").click(function(){
 
     $("#hidealuno").hide();
-
+    $("#hidedados").show();
   });
 
 });
