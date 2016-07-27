@@ -20,16 +20,16 @@ $(document).ready(function(){
   });
 
   $("#tipo").change(function(){
-    
+
     var opSelected = $("#tipo option:selected").val();
 
-    if(opSelected == 2){
+    if(opSelected == 1){
 
-        $("#hidecheckbox").show();
+        $("#hidecheckbox").hide();
 
     }else{
 
-        $("#hidecheckbox").hide();
+        $("#hidecheckbox").show();
 
     }
 
